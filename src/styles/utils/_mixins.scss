@@ -1,0 +1,16 @@
+@mixin buttonPrimary {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  background-color: $color-primary;
+  border: none;
+  color: $color-secondary;
+}
+@mixin buttonSecondary($size) {
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

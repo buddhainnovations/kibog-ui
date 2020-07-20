@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1091" viewBox="0 0 1920 1091">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.449" y1="0.311" x2="0.898" y2="0.805" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#20b0e0" stop-opacity="0.341"/>
+      <stop offset="1" stop-color="#0f4c81"/>
+    </linearGradient>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="1920" height="1091"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="1920" height="1091" fill="#fff"/>
+    <g id="Group_536" data-name="Group 536">
+      <g id="Group_535" data-name="Group 535">
+        <rect id="Rectangle_342" data-name="Rectangle 342" width="1920" height="628" fill="none"/>
+      </g>
+      <path id="Path_1512" data-name="Path 1512" d="M1234.364-1822.082s-559.693,79.209-624.93,279.247,284.5,240.313,73.063,336.976-375.669,55.044-510.643,95.32S17.563-1017.8,69.757-982.556s141.458,25.689,310.875,12.983c232.715-17.453,724.741-10.74,853.732-25.508Z" transform="translate(685.636 1890)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

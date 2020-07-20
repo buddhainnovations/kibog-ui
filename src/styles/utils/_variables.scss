@@ -1,0 +1,60 @@
+//Colors
+$color-primary: #0f4c81;
+$color-secondary: white;
+$text-primary: black;
+$text-secondary: #5e6063;
+
+// Responsive breakpoints
+
+$mobile: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$large_screen: 1200px;
+
+//font sizes
+$h1: 4.18rem; // 67px
+
+$h2: 3.18rem; //51px
+
+$h3: 2.37rem; //38px
+
+$h4: 1.75rem; //28px
+
+$h5: 1.31rem; //21px
+
+$base: 1rem; //16px
+
+$small: 0.75rem; //12px
+
+//headins
+h1 {
+  font-size: $h1;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+h2 {
+  font-size: $h2;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+h3 {
+  font-size: $h3;
+  font-weight: bold;
+  line-height: 3.06rem;
+}
+h4 {
+  font-size: $h4;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+h5 {
+  font-size: $h5;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+//paragraph
+// p {
+//   font-size: 1rem;
+//   font-weight: 200;
+// }
