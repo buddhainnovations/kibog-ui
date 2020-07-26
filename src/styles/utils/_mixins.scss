@@ -5,12 +5,31 @@
   background-color: $color-primary;
   border: none;
   color: $color-secondary;
+  outline: none;
 }
-@mixin buttonSecondary($size) {
+@mixin buttonSecondary() {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: 1.5px solid $color-secondary;
+  color: $color-secondary;
+  background: none;
+  outline: none;
 }
 
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin Underline {
+  content: '';
+  position: absolute;
+  top: 58px;
+  left: 5px;
+  width: 50px;
+  height: 5px;
+  border-radius: 23px;
+  background-color: $color-primary;
 }

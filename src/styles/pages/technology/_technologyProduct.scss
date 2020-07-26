@@ -1,0 +1,184 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+//style for herosection of the page
+
+//hero section styling
+.tp--hero {
+  width: 90%;
+  margin: 0 auto;
+
+  &-container {
+    margin: 1rem 0;
+    padding: 0rem;
+
+    .tp--hero-text {
+      margin-top: 10rem;
+
+      //title
+      h4 {
+        line-height: $h4 * 1.4;
+        width: 80%;
+      }
+
+      //cta text
+      p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.2rem * 1.3;
+        width: 75%;
+        color: $text-secondary;
+      }
+      //cta button
+
+      button {
+        @include buttonPrimary();
+        &:hover {
+          background-color: rgb(10, 26, 95);
+          transition: ease-in-out 0.5s;
+        }
+      }
+    }
+
+    .tp--image-container {
+      position: relative;
+      .tp--product-image {
+        position: absolute;
+        z-index: -5;
+        top: -25px;
+      }
+      .tp--hero {
+        display: grid;
+        place-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        background: rgb(233, 230, 230);
+        height: 40vw;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      top: 75%;
+      left: 40%;
+    }
+  }
+}
+
+//benefit section
+
+.tp--benefit-wrapper {
+  background: url('../../../assets//images//whykibogbg.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 8rem;
+  h3 {
+    width: $grid-width;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      @include Underline();
+    }
+  }
+  .tp--benefit-container {
+    width: $grid-width;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.tp--benefit {
+  margin: 5rem 0;
+  justify-content: flex-end !important;
+
+  &-card {
+    max-width: 24%;
+    margin: 0.5rem;
+    figure {
+      width: 100%;
+      text-align: left;
+      img {
+        height: 6rem;
+      }
+    }
+
+    h5 {
+      text-align: left;
+      margin-top: 1rem;
+    }
+
+    p {
+      text-align: left;
+      font-size: 1rem;
+      line-height: 1.1 * 1.4rem;
+      color: $text-secondary;
+    }
+  }
+}
+
+//about and service part
+
+.tp--detail-container {
+  width: $grid-width;
+  margin: 5rem auto;
+  padding: 0;
+
+  .tp--services {
+    padding: 0;
+
+    &-title {
+      position: relative;
+      &::after {
+        @include Underline();
+      }
+    }
+    &-items {
+      margin: 3rem 0;
+
+      list-style-type: none;
+      li {
+        padding: 0.5rem;
+
+        i {
+          color: $color-primary;
+          font-weight: 100;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .tp--about {
+    background: rgb(233, 230, 230);
+    padding: 01rem;
+    margin-top: 10rem;
+
+    .tp--about-title {
+      position: relative;
+
+      &::after {
+        @include Underline();
+      }
+    }
+
+    .tp--about-application {
+      margin-top: 3rem;
+      .tp--about-items {
+        margin-top: 3rem;
+        figure {
+          text-align: center;
+
+          img {
+            width: 3rem;
+          }
+
+          figcaption {
+          }
+        }
+      }
+    }
+  }
+}

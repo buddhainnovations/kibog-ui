@@ -1,0 +1,31 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.mainNavbar {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+
+  .navbarBox {
+    height: 5rem;
+    flex: 1;
+    .navbar--options {
+      margin: 0;
+      height: 5rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .navbar--list {
+        list-style: none;
+
+        &-link {
+          padding: 1.5rem;
+          text-decoration: none;
+          color: black;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

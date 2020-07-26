@@ -4,45 +4,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 //import components
 
-import Navbar from '../../components/navbar/navbar';
-import Footer from '../../components/footer/footer';
 //images
 
 import Product from '../../assets/product image/productimage.jpg';
-import HreoConsulting from '../../assets/images/HeroConsulting.jpg';
 
-const Distribution = () => {
+const RelatedProduct = () => {
   return (
     <Fragment>
-      <Navbar />
-
-      <section className='consulting--hero'>
-        <div className='hero--content'>
-          <h1>IT & BUSINSS Distribution</h1>
-          <h6>
-            Today, business and technology are inextricably linked and demand
-            for technology-enabled business solutions are rapidly growing. Blue
-            Kanyon helps clients resolve their information and technology
-            challenges and supports them in optimizing their business
-            operations.
-          </h6>
-          <button>Get A Quote</button>
-        </div>
-      </section>
-
-      <section className='product--display'>
-        <h2>
-          Our <strong style={{ color: '#0f4c81' }}>Solutinos</strong> For Your
-          <strong style={{ color: '#0f4c81' }}> Business </strong>
-        </h2>
-
+      <section className='related--wrapper'>
         <h3>Products/Services</h3>
 
-        <Container fluid className='card--wrapper'>
+        <Container fluid className='related'>
           <Row style={{ justifyContent: 'flex-end' }}>
             {/* Course box here */}
-            <Col className='product--cards' lg={3}>
-              <div className='image--container'>
+            <Col className='related--cards' lg={3}>
+              <div className='related--cards-image'>
                 <figure>
                   <img src={Product} alt='' />
                 </figure>
@@ -59,8 +35,8 @@ const Distribution = () => {
 
               <button>Find Solution</button>
             </Col>
-            <Col className='product--cards' lg={3}>
-              <div className='image--container'>
+            <Col className='related--cards' lg={3}>
+              <div className='related--cards-image'>
                 <figure>
                   <img src={Product} alt='' />
                 </figure>
@@ -77,8 +53,8 @@ const Distribution = () => {
 
               <button>Find Solution</button>
             </Col>
-            <Col className='product--cards' lg={3}>
-              <div className='image--container'>
+            <Col className='related--cards' lg={3}>
+              <div className='related--cards-image'>
                 <figure>
                   <img src={Product} alt='' />
                 </figure>
@@ -102,4 +78,4 @@ const Distribution = () => {
   );
 };
 
-export default Distribution;
+export default RelatedProduct;

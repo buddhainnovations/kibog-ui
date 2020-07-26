@@ -2,3 +2,21 @@
 @import './utils/variables';
 @import './base/base';
 @import './utils/mixins';
+
+//import components
+
+@import './components/navbar/navbar';
+@import './components/footer/footer';
+@import './components//relatedProduct/relatedProduct';
+@import './components//relatedBlogs/relatedBlogs';
+
+//import pages
+
+@import './pages//consulting/consulting';
+@import './pages//consulting/consultingProduct';
+@import './pages/distribution/distribution';
+@import './pages/about/about';
+@import './pages/caseStudies/caseStudies';
+@import './pages/pressRelease//pressRelease';
+@import './pages//technology/tech';
+@import './pages/technology//technologyProduct';
