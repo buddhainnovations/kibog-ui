@@ -1,0 +1,131 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+//style for herosection of the page
+
+//hero section styling
+.case--hero {
+  width: 90%;
+  margin: 0 auto;
+
+  &-container {
+    margin: 1rem 0;
+    padding: 0rem;
+
+    .case--hero-text {
+      margin-top: 10rem;
+
+      //title
+      h4 {
+        line-height: $h4 * 1.4;
+        width: 80%;
+      }
+
+      //cta text
+      p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.2rem * 1.3;
+        width: 75%;
+        color: $text-secondary;
+      }
+      //cta button
+
+      button {
+        @include buttonPrimary();
+        &:hover {
+          background-color: rgb(10, 26, 95);
+          transition: ease-in-out 0.5s;
+        }
+      }
+    }
+
+    .case--image-container {
+      position: relative;
+      .case--product-image {
+        position: absolute;
+        z-index: -5;
+        top: -25px;
+      }
+      .case--hero {
+        display: grid;
+        place-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        background: rgb(233, 230, 230);
+        height: 40vw;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      top: 75%;
+      left: 40%;
+    }
+  }
+}
+
+.client {
+  width: $grid-width;
+  margin: 1rem auto;
+  h3 {
+    position: relative;
+    &::after {
+      @include Underline();
+    }
+  }
+
+  figure {
+    padding: 3rem 0;
+    img {
+      width: 10rem;
+    }
+    figcaption {
+      font-weight: bold;
+    }
+  }
+}
+
+//about and service part
+
+.casep--detail-container {
+  width: $grid-width;
+  margin: 5rem auto;
+  padding: 0;
+
+  .casep--services {
+    padding: 0;
+
+    &-title {
+      position: relative;
+      &::after {
+        @include Underline();
+      }
+    }
+    &-items {
+      margin: 3rem 0;
+
+      list-style-type: none;
+      li {
+        padding: 0.5rem;
+
+        i {
+          color: $color-primary;
+          font-weight: 100;
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .casep--about {
+    padding: 01rem;
+  }
+}
+
+.outcome {
+  width: $grid-width;
+  margin: 1rem auto;
+}

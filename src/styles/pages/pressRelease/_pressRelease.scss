@@ -1,0 +1,40 @@
+//import variables
+
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.press--wrapper {
+  h3 {
+    width: $grid-width;
+    margin: 5rem auto 3rem auto;
+    position: relative;
+
+    &::after {
+      @include Underline();
+    }
+  }
+
+  .press {
+    width: $grid-width;
+    margin: 0 auto;
+
+    &--container {
+      background: $color-primary;
+      color: white;
+      margin: 1rem 0;
+      border-radius: 4px;
+      padding: 1rem;
+      box-shadow: 1px 2px 6px rgba(17, 8, 41, 0.253);
+      max-width: 32%;
+      // max-width: 24%;
+
+      p {
+        // text-align: center;
+        font-size: 15px;
+      }
+      button {
+        @include buttonSecondary();
+      }
+    }
+  }
+}

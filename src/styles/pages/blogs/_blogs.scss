@@ -1,0 +1,115 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.blogs--wrapper {
+  width: $grid-width;
+  margin: 0 auto;
+  display: flex;
+  .blogs--recent {
+    border-right: 0.2px solid rgb(238, 236, 236);
+    padding: 1rem;
+    width: 20%;
+    h3 {
+      margin: 2rem 0;
+      color: rgb(71, 66, 66);
+    }
+    &-card {
+      box-shadow: 3px 3px 6px rgb(207, 207, 218);
+      border: 0.1px solid rgb(243, 238, 238);
+      border-radius: 4px;
+      padding: 1rem;
+      margin: 1rem 0;
+      color: rgb(112, 111, 111);
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .allblog--wrapper {
+    width: 80%;
+    .allblog--container {
+      h3 {
+        margin: 3rem 0 1rem 0;
+      }
+      .allblog--card {
+        margin: 1rem 0;
+        box-shadow: 2px 3px 7px #0f4c8127;
+        border-radius: 4px;
+        padding: 0;
+        max-width: 30%;
+
+        &-image {
+          position: relative;
+          width: 100%;
+
+          figure {
+            width: 100%;
+            height: 15rem;
+            border-radius: 4px 4px 0 0;
+            overflow: hidden;
+            img {
+              width: 100%;
+            }
+          }
+
+          .allblog--overlay {
+            height: 15rem;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            background: #000;
+            opacity: 0.3;
+          }
+          .allblog--title {
+            position: absolute;
+            top: 100%;
+            position: absolute;
+            text-align: left;
+            top: 55%;
+
+            color: $color-secondary;
+            text-shadow: 1px 2px 6px #ffffff2c;
+          }
+        }
+        .allblog--desc {
+          padding: 0 1rem;
+          text-align: left;
+          margin: 0;
+          height: 9rem;
+          display: block;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        h6 {
+          text-align: right;
+          padding: 1rem;
+          color: $color-primary;
+        }
+
+        .allblog--date {
+          background: #f7922f;
+          border-radius: 4px;
+          padding: 0.7rem;
+          color: $color-secondary;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .allblog--category {
+          background: $color-primary;
+          border-radius: 4px;
+          padding: 0.5rem;
+          color: $color-secondary;
+          position: absolute;
+          top: 1%;
+          right: -3%;
+        }
+      }
+    }
+  }
+}

@@ -11,12 +11,12 @@ import Footer from '../../components/footer/footer';
 import Product from '../../assets/product image/productimage.jpg';
 import HreoConsulting from '../../assets/images/HeroConsulting.jpg';
 
-const Consulting = () => {
+const Technology = () => {
   return (
     <Fragment>
       <Navbar />
 
-      <section className='consulting--hero'>
+      <section className='technology--hero'>
         <div className='hero--content'>
           <h1>Technology Products</h1>
           <h6>
@@ -30,7 +30,7 @@ const Consulting = () => {
         </div>
       </section>
 
-      <section className='product--display'>
+      <section className='technology--product--display'>
         <h2>
           Our <strong style={{ color: '#0f4c81' }}>Solutinos</strong> For Your
           <strong style={{ color: '#0f4c81' }}> Business </strong>
@@ -102,4 +102,4 @@ const Consulting = () => {
   );
 };
 
-export default Consulting;
+export default Technology;

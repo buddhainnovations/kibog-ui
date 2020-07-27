@@ -12,11 +12,26 @@
 
 //import pages
 
+//consulting
 @import './pages//consulting/consulting';
 @import './pages//consulting/consultingProduct';
+
+//others
 @import './pages/distribution/distribution';
 @import './pages/about/about';
 @import './pages/caseStudies/caseStudies';
-@import './pages/pressRelease//pressRelease';
+@import './pages/pressRelease/pressRelease';
+@import './pages//blogs//blogs';
+@import './pages//pressRelease/pressRelease';
+@import './pages//caseStudies/caseProduct';
+@import './pages/whyKibog/whyKibog';
+@import './pages//form/form';
+
+// /technology
 @import './pages//technology/tech';
-@import './pages/technology//technologyProduct';
+@import './pages/technology/technologyProduct';
+@import './pages/technology/technology';
+
+//distribution
+@import './pages/distribution/dist';
+@import './pages/distribution//distributionProduct';

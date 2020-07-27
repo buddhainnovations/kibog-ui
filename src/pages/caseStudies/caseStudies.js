@@ -19,7 +19,23 @@ const CaseStudies = () => {
           Case <span style={{ fontWeight: 'lighter' }}>Studies</span>{' '}
         </h3>
         <Container fluid className='case'>
-          <Row style={{ justifyContent: 'space-between' }}>
+          <Row style={{ justifyContent: 'space-evenly' }}>
+            <Col className='case--container' lg={3}>
+              <figure>
+                <img src={Logo} alt='' />
+              </figure>
+
+              <h5>
+                This is sample Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Qui excepturi .
+              </h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                corporis tempora esse non, voluptas sapiente velit quae officiis
+                harum soluta pariatur vel ullam quasi! Dolore nemo dicta dolorum
+                tempora incidunt.
+              </p>
+            </Col>
             <Col className='case--container' lg={3}>
               <figure>
                 <img src={Logo} alt='' />

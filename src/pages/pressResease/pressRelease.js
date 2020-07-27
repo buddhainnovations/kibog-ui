@@ -14,75 +14,47 @@ const PressRelease = () => {
     <Fragment>
       <Navbar />
 
-      <section className='case--wrapper'>
+      <section className='press--wrapper'>
         <h3>
-          Case <span style={{ fontWeight: 'lighter' }}>Studies</span>{' '}
+          Press <span style={{ fontWeight: 'lighter' }}>Release</span>{' '}
         </h3>
-        <Container fluid className='case'>
+        <Container fluid className='press'>
           <Row style={{ justifyContent: 'space-between' }}>
-            <Col className='case--container' lg={3}>
-              <figure>
-                <img src={Logo} alt='' />
-              </figure>
-
-              <h5>
-                This is sample Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Qui excepturi .
-              </h5>
+            <Col className='press--container' lg={4}>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 corporis tempora esse non, voluptas sapiente velit quae officiis
                 harum soluta pariatur vel ullam quasi! Dolore nemo dicta dolorum
                 tempora incidunt.
               </p>
+              <button>Read More</button>
             </Col>
-            <Col className='case--container' lg={3}>
-              <figure>
-                <img src={Logo} alt='' />
-              </figure>
-
-              <h5>
-                This is sample Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Qui excepturi .
-              </h5>
+            <Col className='press--container' lg={4}>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 corporis tempora esse non, voluptas sapiente velit quae officiis
                 harum soluta pariatur vel ullam quasi! Dolore nemo dicta dolorum
                 tempora incidunt.
               </p>
+              <button>Read More</button>
             </Col>
-            <Col className='case--container' lg={3}>
-              <figure>
-                <img src={Logo} alt='' />
-              </figure>
-
-              <h5>
-                This is sample Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Qui excepturi .
-              </h5>
+            <Col className='press--container' lg={4}>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 corporis tempora esse non, voluptas sapiente velit quae officiis
                 harum soluta pariatur vel ullam quasi! Dolore nemo dicta dolorum
                 tempora incidunt.
               </p>
+              <button>Read More</button>
             </Col>
-            <Col className='case--container' lg={3}>
-              <figure>
-                <img src={Logo} alt='' />
-              </figure>
-
-              <h5>
-                This is sample Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Qui excepturi .
-              </h5>
+            <Col className='press--container' lg={4}>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
                 corporis tempora esse non, voluptas sapiente velit quae officiis
                 harum soluta pariatur vel ullam quasi! Dolore nemo dicta dolorum
                 tempora incidunt.
               </p>
+              <button>Read More</button>
             </Col>
           </Row>
         </Container>
