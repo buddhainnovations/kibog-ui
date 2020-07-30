@@ -1,5 +1,5 @@
 @mixin buttonPrimary {
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
   font-size: 1.2rem;
   border-radius: 4px;
   background-color: $color-primary;
@@ -8,7 +8,7 @@
   outline: none;
 }
 @mixin buttonSecondary() {
-  padding: 0.8rem 1.8rem;
+  padding: 0.7rem 1.8rem;
   font-size: 1.2rem;
   border-radius: 4px;
   border: 1.5px solid $color-secondary;

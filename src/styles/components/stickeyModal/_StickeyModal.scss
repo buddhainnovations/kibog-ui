@@ -1,50 +1,55 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
 
-.whykibog-main {
-  width: $grid-width - 35%;
-  margin: 0 auto;
-  box-shadow: 2px 2px 6px rgb(189, 184, 184);
-
-  h3 {
-    padding: 2rem;
-  }
-
+.modal--container {
+  border: none;
   figure {
+    border-radius: 4px;
     background: $color-primary;
     height: 8rem;
+    display: grid;
+    place-items: center;
     h3 {
+      text-align: center;
       color: white;
     }
   }
 
-  .form--box {
+  .modal--form--box {
     padding: 2rem;
-    .form--lable {
+    .modal--form--lable {
       display: block;
       padding: 0.5rem 0;
       display: flex;
 
-      .lable--name {
+      .modal--lable--name {
         font-size: 1rem;
         font-weight: bold;
         width: 25%;
 
-        .lable--option {
+        .modal--lable--option {
           font-size: 0.7rem;
           font-weight: lighter;
         }
       }
 
-      .inputbox {
-        width: 60%;
+      .modal--inputbox {
+        outline: none;
+        padding: 0.5rem;
+        width: 80%;
 
         border: none;
         border-bottom: 1px solid rgb(68, 63, 63);
       }
     }
     button {
+      margin-top: 1.2rem;
       @include buttonPrimary();
     }
   }
+}
+
+.modal-content {
+  border: none !important;
+  border-radius: 4px;
 }

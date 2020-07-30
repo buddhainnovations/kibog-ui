@@ -1,11 +1,12 @@
 import React, { Fragment, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
 
 //import components
 
 import Navbar from '../../components/navbar/navbar';
 import Footer from '../../components/footer/footer';
+import StickeyModel from '../../components/stickeyModal/StickeyModal';
 
 //import images
 
@@ -19,6 +20,10 @@ import Distribution from '../../assets/images/distribution.svg';
 import Productivity from '../../assets/images/productivity.svg';
 import Chain from '../../assets/images/chain.svg';
 import Industry from '../../assets/images/industry.svg';
+
+import Cicon from '../../assets/images/heroIcons/consult.svg';
+import Ticon from '../../assets/images/heroIcons/technology.svg';
+import Dicon from '../../assets/images/heroIcons/distribution.svg';
 
 //testimonils
 
@@ -52,9 +57,28 @@ const Home = () => {
                     today - and shape how they’ll overcome the challenges of
                     tomorrow.
                   </p>
-                  <Link to='/research' className='navbar--list-link'>
+                  {/* <Link to='/research' className='navbar--list-link'>
                     <button>Go to my Research</button>
-                  </Link>
+                  </Link> */}
+
+                  <button>
+                    <span>
+                      <img src={Cicon} alt='' />
+                    </span>{' '}
+                    <span>Consulting</span>
+                  </button>
+                  <button>
+                    <span>
+                      <img src={Ticon} alt='' />
+                    </span>{' '}
+                    <span>Consulting</span>
+                  </button>
+                  <button>
+                    <span>
+                      <img src={Dicon} alt='' />
+                    </span>{' '}
+                    <span>Consulting</span>
+                  </button>
                 </Col>
                 <Col className='hero--container-image' xs={6} lg={5}>
                   {/* put image here */}
@@ -66,6 +90,10 @@ const Home = () => {
           </section>
         </section>
       </div>
+
+      {/* stickey section  */}
+
+      <StickeyModel />
 
       {/* Body section starts from here */}
 
@@ -249,12 +277,13 @@ const Home = () => {
           </div>
         </section>
 
+        {/* good company part  */}
+
         <section className='goodcompany'>
-          <h6 className='featureblog--title'>
-            {' '}
-            Personal Protective Equipment (PPE) and Employee Safety – What
-            Organizations Need to Know.center
-          </h6>
+          <h3 className='featureblog--title'>
+            You are in a{' '}
+            <strong style={{ color: '#0f4c81' }}>Good Company</strong>
+          </h3>
 
           <div className='company--holder'>
             <div className='row--upper'>

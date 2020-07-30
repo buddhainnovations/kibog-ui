@@ -26,7 +26,7 @@ const Technology = () => {
             challenges and supports them in optimizing their business
             operations.
           </h6>
-          <button>Get A Quote</button>
+          <button>Request a demo</button>
         </div>
       </section>
 

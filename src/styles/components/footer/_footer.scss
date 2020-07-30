@@ -1,2 +1,71 @@
 @import '../../utils/variables';
 @import '../../utils/mixins';
+
+footer {
+  background: $color-primary;
+
+  .footer--wrapper {
+    color: white;
+    width: $grid-width;
+    margin: 0 auto;
+
+    figure {
+      img {
+        margin: 1rem 0;
+      }
+    }
+
+    .footer--container {
+      padding: 0;
+      margin: 1rem 0 2rem 0;
+
+      .footer--col {
+        h5 {
+          margin: 1rem 0;
+        }
+        div {
+          margin: 01rem 0;
+          a {
+            color: rgb(230, 225, 216);
+          }
+
+          input {
+            outline: none;
+            border: none;
+            padding: 0.3rem;
+            border-radius: 4px;
+            &::placeholder {
+              padding: 0.5rem;
+            }
+          }
+          button {
+            @include buttonSecondary();
+            margin-left: 0.3rem;
+            padding: 0.1rem 0.5rem;
+            text-align: center;
+            border-radius: 4px;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 1rem 0;
+      a {
+        color: wheat;
+      }
+    }
+  }
+}
+
+.social {
+  a {
+    color: rgb(255, 255, 255);
+    i {
+    }
+  }
+}

@@ -18,8 +18,9 @@ import DistributionProduct from '../pages/distribution/distributionProduct';
 import Blogs from '../pages/blogs/blogs';
 import PressRelease from '../pages/pressResease/pressRelease';
 import CaseProduct from '../pages/caseStudies/caseProduct';
-import WhyKibog from '../pages/whyKibog/whyKibog';
+import AboutUs from '../pages/about/about';
 import Form from '../pages/form/form';
+import Support from '../pages/support/Support';
 
 const Path = () => {
   return (
@@ -38,8 +39,9 @@ const Path = () => {
         <Route exact path='/blogs' component={Blogs} />
         <Route exact path='/press-release' component={PressRelease} />
         <Route exact path='/case-product' component={CaseProduct} />
-        <Route exact path='/why-kibog' component={WhyKibog} />
+        <Route exact path='/about-us' component={AboutUs} />
         <Route exact path='/form' component={Form} />
+        <Route exact path='/support' component={Support} />
 
         {/* <Route exact path='/techp' component={Distribution} />
         <Route exact path='/distp' component={Distribution} /> */}

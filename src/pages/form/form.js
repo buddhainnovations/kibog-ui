@@ -25,33 +25,33 @@ const Form = () => {
               {' '}
               Name <span className='lable--option'>(optional)</span>
             </span>
-            <input type='text' />
+            <input type='text' className='inputbox' />
           </label>
           <label className='form--lable'>
-            <span>
+            <span className='lable--name'>
               {' '}
-              Name <span>(optional)</span>
+              Name <span className='lable--option'>(optional)</span>
             </span>
-            <input type='text' />
+            <input type='text' className='inputbox' />
           </label>
           <label className='form--lable'>
-            <span>
+            <span className='lable--name'>
               {' '}
-              Name <span>(optional)</span>
+              Name <span className='lable--option'>(optional)</span>
             </span>
-            <input type='text' />
+            <input type='text' className='inputbox' />
           </label>
           <label className='form--lable'>
-            <span>
+            <span className='lable--name'>
               {' '}
-              Name <span>(optional)</span>
+              Name <span className='lable--option'>(optional)</span>
             </span>
-            <input type='text' />
+            <input type='text' className='inputbox' />
           </label>
           <label className='form--lable'>
-            <span>
+            <span className='lable--name'>
               {' '}
-              Name <span>(optional)</span>
+              Name <span className='lable--option'>(optional)</span>
             </span>
             <select id='country' name='country'>
               <option value='australia'>Australia</option>
@@ -62,10 +62,12 @@ const Form = () => {
 
           <label className='form--lable'>
             <input type='checkbox' />
-            <span></span>
           </label>
 
-          <input className='form--submit' type='submit' value='Submit' />
+          <button className='form--submit' type='submit' value='Submit'>
+            {' '}
+            Submit
+          </button>
         </form>
       </main>
     </Fragment>

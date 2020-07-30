@@ -7,25 +7,26 @@
 
 @import './components/navbar/navbar';
 @import './components/footer/footer';
-@import './components//relatedProduct/relatedProduct';
-@import './components//relatedBlogs/relatedBlogs';
+@import './components/relatedProduct/relatedProduct';
+@import './components/relatedBlogs/relatedBlogs';
+@import './components/stickeyModal/StickeyModal';
 
 //import pages
 
 //consulting
-@import './pages//consulting/consulting';
-@import './pages//consulting/consultingProduct';
+@import './pages/consulting/consulting';
+@import './pages/consulting/consultingProduct';
 
 //others
 @import './pages/distribution/distribution';
 @import './pages/about/about';
 @import './pages/caseStudies/caseStudies';
 @import './pages/pressRelease/pressRelease';
-@import './pages//blogs//blogs';
-@import './pages//pressRelease/pressRelease';
-@import './pages//caseStudies/caseProduct';
-@import './pages/whyKibog/whyKibog';
-@import './pages//form/form';
+@import './pages/blogs//blogs';
+@import './pages/pressRelease/pressRelease';
+@import './pages/caseStudies/caseProduct';
+@import './pages/form/form';
+@import './pages/support/support';
 
 // /technology
 @import './pages//technology/tech';

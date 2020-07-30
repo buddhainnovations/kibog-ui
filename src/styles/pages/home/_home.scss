@@ -32,9 +32,18 @@
 
       button {
         @include buttonPrimary();
+        background: rgb(32, 176, 224);
+        background: linear-gradient(
+          80deg,
+          rgba(32, 176, 224, 1) 0%,
+          rgba(15, 76, 129, 1) 100%
+        );
+        padding: 0.6rem 1rem;
+        margin: 1rem 0.5rem;
         &:hover {
-          background-color: rgb(10, 26, 95);
-          transition: ease-in-out 0.5s;
+          background-color: #31a2d8;
+          transition: ease-in-out 0.2s;
+          transform: translateY(-3px);
         }
       }
     }
@@ -377,5 +386,17 @@
     button {
       @include buttonPrimary();
     }
+  }
+}
+
+//stickey icon part
+
+.stickey--icon {
+  position: fixed;
+  top: 85%;
+  left: 1%;
+  z-index: 10;
+  img {
+    width: 10rem;
   }
 }

@@ -1,0 +1,70 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+//hero image section
+.support--hero {
+  background: url('../../../assets//images//HeroConsulting.jpg');
+  height: 30vw;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+
+  .support--hero--content {
+    width: 65%;
+    text-align: center;
+
+    h1 {
+      line-height: $h1;
+      color: $color-secondary;
+      text-shadow: 1px 2px 6px #0505056e;
+    }
+
+    button {
+      @include buttonSecondary();
+      margin-top: 2rem;
+    }
+  }
+}
+
+//guide part
+
+.guide {
+  width: $grid-width;
+  margin: 3rem auto;
+  h6 {
+    text-align: center;
+  }
+
+  &--row {
+    margin: 5rem 0;
+    .guide--card {
+      &:nth-child(odd) {
+        border-right: 0.1px solid rgb(250, 246, 246);
+      }
+
+      figure {
+        height: 10rem;
+        width: 10rem;
+        display: grid;
+        place-items: center;
+        border: 0.1px solid rgb(216, 213, 213);
+        border-radius: 4px;
+        img {
+          width: inherit;
+        }
+      }
+
+      .guide--list {
+        list-style-type: none;
+        margin: 2rem 0;
+        a {
+          color: $color-primary;
+
+          i {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
